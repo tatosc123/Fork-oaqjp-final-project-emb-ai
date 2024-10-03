@@ -27,8 +27,12 @@ def emotion_detector(text_to_analyze):
         'dominant_emotion': dominant_emotion
             }
 
-print(emotion_detector('I am so happy I am doing this'))
+#print(emotion_detector('I hate working long hours'))
 
 
 #    python3.11 emotion_detection.py 
     
+# git add .
+# git config --global user.email "tatosc@msn.com"
+# git congig --global user.name "tatosc123"
+# git commit -m " last commit"
