@@ -34,5 +34,6 @@ def emotion_detector(text_to_analyze):
     
 # git add .
 # git config --global user.email "tatosc@msn.com"
-# git congig --global user.name "tatosc123"
+# git config --global user.name "tatosc123"
 # git commit -m " last commit"
+# git push
