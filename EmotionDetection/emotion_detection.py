@@ -19,11 +19,15 @@ def emotion_detector(text_to_analyze):
     dominant_emotion = max(label, key=label.get)
 
     return {
-       
+        'anger': anger_score,
+        'disgust': disgust_score,
+        'fear': fear_score,
+        'joy': joy_score,
+        'sadness': sadness_score,
         'dominant_emotion': dominant_emotion
             }
 
-print(emotion_detector('I hate working long hours'))
+#print(emotion_detector('I hate working long hours'))
 
 
 #    python3.11 emotion_detection.py 
