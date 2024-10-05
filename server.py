@@ -9,10 +9,11 @@ def sent_analizer():
     # Pass the text to the emotion detector function
     response = emotion_detector(text_to_analyze)
     
-    # Extract the label and the score for the response
-
-    return response
-
+   # # error_handling dominant_emotion test
+    if response["dominant_emotion"] is None:
+        return 'Invalid text! Please try again!.'
+    else:
+        return response    
     
 @app.route("/")
 def render_index_page():
