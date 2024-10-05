@@ -6,15 +6,14 @@ app = Flask(__name__)
 def sent_analizer():
     # Retrive text to analize from the request arguments
     text_to_analyze = request.args.get('textToAnalyze')
-
     # Pass the text to the emotion detector function
     response = emotion_detector(text_to_analyze)
     
     # Extract the label and the score for the response
-    
-    return response
-    
 
+    return response
+
+    
 @app.route("/")
 def render_index_page():
     return render_template('index.html')
